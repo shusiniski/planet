@@ -1,0 +1,42 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/milky-way.jpg);
+    
+    
+}
+
+.earth{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid transparent;
+    left: 33.5%;
+    top: 173.5px;
+    animation: earth 10s infinite linear ; 
+}
+.sun{
+position: absolute;
+left: 43.5%;
+top: 330px;
+}
+
+.moon{
+    position: relative;
+    left: -30px;
+    top: -110px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid transparent;
+    animation: earth 2s  infinite linear ; 
+}
+.earth img{
+    animation: earth 8s  infinite linear ; 
+}
+
+@keyframes earth{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
